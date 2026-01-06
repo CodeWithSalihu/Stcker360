@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Account Settings - Stcker360</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="account settings, billing, subscription, preferences, API keys" name="keywords">
+    <meta content="Manage your subscription, billing information, notifications, security, and API access." name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link rel="stylesheet" href="lib/animate/animate.min.css"/>
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid topbar bg-light px-5 d-none d-lg-block border-bottom">
+        <div class="row gx-0 align-items-center">
+            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-flex flex-wrap">
+                    <a href="#" class="text-muted small me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>Lagos, Nigeria</a>
+                    <a href="tel:+2348012345678" class="text-muted small me-4"><i class="fas fa-phone-alt text-primary me-2"></i>+234 801 234 5678</a>
+                    <a href="mailto:support@stcker360.com" class="text-muted small me-0"><i class="fas fa-envelope text-primary me-2"></i>support@stcker360.com</a>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <div class="dropdown">
+                        <a href="#" class="dropdown-toggle text-dark" data-bs-toggle="dropdown">
+                            <small><i class="fa fa-home text-primary me-2"></i> My Dashboard</small>
+                        </a>
+                        <div class="dropdown-menu rounded shadow">
+                            <a href="profile.html" class="dropdown-item"><i class="fas fa-user-alt me-2"></i> My Profile</a>
+                            <a href="inbox.html" class="dropdown-item"><i class="fas fa-comment-alt me-2"></i> Inbox <span class="badge bg-primary rounded-pill ms-2">3</span></a>
+                            <a href="notifications.html" class="dropdown-item"><i class="fas fa-bell me-2"></i> Notifications <span class="badge bg-danger rounded-pill ms-2">5</span></a>
+                            <a href="settings.html" class="dropdown-item active"><i class="fas fa-cog me-2"></i> Account Settings</a>
+                            <hr class="dropdown-divider">
+                            <a href="login.html" class="dropdown-item text-danger"><i class="fas fa-power-off me-2"></i> Log Out</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar & Sidebar Start -->
+    <div class="container-fluid px-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+            <a href="index.html" class="navbar-brand px-4">
+                <h1 class="text-primary m-0"><i class="fas fa-search-dollar me-3"></i>Stcker360</h1>
+            </a>
+            <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+        </nav>
+
+        <div class="d-flex">
+           
+
+            <!-- Main Content -->
+            <div class="flex-grow-1 ms-sm-0 ms-lg-5 px-4 py-5" style="margin-left: 260px;">
+                <div class="container-fluid">
+
+                    <!-- Page Header -->
+                    <div class="mb-5">
+                        <h2 class="mb-3">Account Settings</h2>
+                        <p class="text-muted mb-0">Manage your subscription, preferences, security, and integrations</p>
+                    </div>
+
+                    <div class="row g-5">
+
+                        <!-- Subscription & Billing -->
+                        <div class="col-lg-8">
+                            <div class="card border-0 shadow-sm mb-4">
+                                <div class="card-header bg-white py-3 d-flex justify-content-between align-items-center">
+                                    <h5 class="mb-0">Subscription Plan</h5>
+                                    <span class="badge bg-primary fs-6">Premium</span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-8">
+                                            <h6>Premium Plan</h6>
+                                            <p class="text-muted mb-2">Unlimited products, multi-user access, advanced reports, priority support</p>
+                                            <ul class="small text-muted">
+                                                <li>Up to 20 staff accounts</li>
+                                                <li>Custom reports & exports</li>
+                                                <li>API access</li>
+                                                <li>Daily backups</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4 text-md-end">
+                                            <h4 class="text-primary mb-1">₦15,000<span class="fs-6 text-muted">/month</span></h4>
+                                            <p class="small text-muted">Next billing: Feb 6, 2026</p>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="d-flex gap-3">
+                                        <button class="btn btn-outline-primary rounded-pill px-4">Upgrade Plan</button>
+                                        <button class="btn btn-outline-secondary rounded-pill px-4">Manage Billing</button>
+                                        <button class="btn btn-outline-danger rounded-pill px-4">Cancel Subscription</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Notification Preferences -->
+                            <div class="card border-0 shadow-sm mb-4">
+                                <div class="card-header bg-white py-3">
+                                    <h5 class="mb-0">Notifications</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-check form-switch mb-3">
+                                        <input class="form-check-input" type="checkbox" id="emailDaily" checked>
+                                        <label class="form-check-label" for="emailDaily">Daily sales summary email</label>
+                                    </div>
+                                    <div class="form-check form-switch mb-3">
+                                        <input class="form-check-input" type="checkbox" id="lowStock" checked>
+                                        <label class="form-check-label" for="lowStock">Low stock alerts</label>
+                                    </div>
+                                    <div class="form-check form-switch mb-3">
+                                        <input class="form-check-input" type="checkbox" id="newStaff">
+                                        <label class="form-check-label" for="newStaff">New staff login notifications</label>
+                                    </div>
+                                    <div class="form-check form-switch mb-3">
+                                        <input class="form-check-input" type="checkbox" id="weeklyReport" checked>
+                                        <label class="form-check-label" for="weeklyReport">Weekly business report</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Security -->
+                            <div class="card border-0 shadow-sm">
+                                <div class="card-header bg-white py-3">
+                                    <h5 class="mb-0">Security</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center mb-4">
+                                        <div>
+                                            <h6>Two-Factor Authentication (2FA)</h6>
+                                            <p class="text-muted small">Add an extra layer of security to your account</p>
+                                        </div>
+                                        <button class="btn btn-outline-primary rounded-pill px-4">Enable 2FA</button>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h6>Change Password</h6>
+                                            <p class="text-muted small">Last changed 3 months ago</p>
+                                        </div>
+                                        <button class="btn btn-outline-primary rounded-pill px-4">Update Password</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- API & Integrations -->
+                        <div class="col-lg-4">
+                            <div class="card border-0 shadow-sm mb-4">
+                                <div class="card-header bg-white py-3">
+                                    <h5 class="mb-0">API Access</h5>
+                                </div>
+                                <div class="card-body">
+                                    <p class="small text-muted mb-3">Use your API key to integrate Stcker360 with other tools</p>
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" value="sk_live_4f8a9b2c3d7e1f9g0h4i5j6k" readonly>
+                                        <button class="btn btn-outline-secondary" type="button">Copy</button>
+                                    </div>
+                                    <button class="btn btn-outline-danger btn-sm rounded-pill w-100">Regenerate Key</button>
+                                    <hr>
+                                    <small class="text-muted">Keep your API key secret. Do not share it publicly.</small>
+                                </div>
+                            </div>
+
+                            <!-- Data & Backup -->
+                            <div class="card border-0 shadow-sm">
+                                <div class="card-header bg-white py-3">
+                                    <h5 class="mb-0">Data & Backup</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between mb-3">
+                                        <span class="small text-muted">Last backup</span>
+                                        <strong>Today, 2:00 AM</strong>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-4">
+                                        <span class="small text-muted">Backup frequency</span>
+                                        <strong>Daily</strong>
+                                    </div>
+                                    <button class="btn btn-primary rounded-pill w-100 mb-3">Download Backup</button>
+                                    <button class="btn btn-outline-primary rounded-pill w-100">Export All Data (CSV)</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar & Sidebar End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
